@@ -1,4 +1,9 @@
 25.1.6
+
 the baseline is gaussian grouping,
-I add some code in directory"move",for changing the position of gaussian object.
+
+I add some code in directory"move",for changing the position of gaussian object.And put some related code of the python 3d package "pybullet"
+
 you can try to create env and reproduce code for gaussian grouping in https://github.com/lkeab/gaussian-grouping 
+
+
