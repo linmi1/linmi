@@ -1,0 +1,35 @@
+{
+    "objects": [
+        {
+            "shape": "box",
+            "position": [0, 0, 0.1],
+            "orientation": [0, 0, 0],
+            "mass": 1,
+            "halfExtents": [0.1, 0.05, 0.05],
+            "restitution": 0.9,
+            "lateralFriction": 0.2
+        },
+        {
+            "shape": "sphere",
+            "position": [0.5, 0, 0.1],
+            "orientation": [0, 0, 0],
+            "mass": 0.5,
+            "radius": 0.1,
+            "restitution": 0.6,
+            "lateralFriction": 0.4
+        }
+    ],
+    "camera": {
+        "distance": 3,
+        "yaw": 90,
+        "pitch": -10,
+        "target": [0.5, 0, 0.1]
+    },
+    "video": {
+        "width": 640,
+        "height": 480,
+        "fps": 60,
+        "output": "simulation_with_restitution.avi"
+    },
+    "frames": 300
+}

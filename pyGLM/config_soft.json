@@ -1,0 +1,50 @@
+{
+    "objects": [
+        {
+            "shape": "box",
+            "position": [0, 0, 1],
+            "orientation": [0, 0, 0],
+            "mass": 1,
+            "halfExtents": [0.1, 0.05, 0.05],
+            "restitution": 0.9,
+            "lateralFriction": 0.2
+        },
+        {
+            "shape": "sphere",
+            "position": [0.5, 0, 0.5],
+            "orientation": [0, 0, 0],
+            "mass": 0.5,
+            "radius": 0.1,
+            "restitution": 0.6,
+            "lateralFriction": 0.4
+        }
+    ],
+    "soft_body": {
+        "file_path": "duck_vhacd.obj",
+        "scale": 1.0,
+        "position": [1, 0, 4],
+        "orientation": [0, 0, 0],
+        "mass": 2.0,
+        "useNeoHookean": 1,
+        "useBendingSprings": 1,
+        "springElasticStiffness": 20,
+        "springDampingStiffness": 0.05,
+        "springBendingStiffness": 2,
+        "useSelfCollision": 1,
+        "frictionCoeff": 0.2,
+        "useFaceContact": 1
+    },
+    "camera": {
+        "distance": 20,
+        "yaw": 90,
+        "pitch": -10,
+        "target": [0.5, 0, 0.1]
+    },
+    "video": {
+        "width": 640,
+        "height": 480,
+        "fps": 60,
+        "output": "simulation_with_soft_body.avi"
+    },
+    "frames": 300
+}
