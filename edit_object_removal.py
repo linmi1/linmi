@@ -99,8 +99,9 @@ def removal_setup(opt, model_path, iteration, views, gaussians, pipeline, backgr
     # gaussians.move(opt, mask3d)
 
     # save gaussians
+
     point_cloud_path = os.path.join(model_path, "point_cloud_object_removal/iteration_{}".format(iteration))
-    gaussians.save_ply(os.path.join(point_cloud_path, "point_cloud.ply"), masks)
+    gaussians.save_ply(os.path.join(point_cloud_path, "point_cloud.ply"), prob_obj3d, masks)
 
     return gaussians
 
